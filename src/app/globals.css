@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #060606;
+  --foreground: #ffffff;
+  --primary: #CC0000;
+  --primary-dark: #A30000;
+  --primary-light: #FF1A1A;
+  --dark-bg: #0a0a0a;
+  --dark-bg-light: #111111;
+  --card-bg: #111111;
+  --border-color: #222222;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-dark-bg: var(--dark-bg);
+  --color-dark-bg-light: var(--dark-bg-light);
+  --color-card-bg: var(--card-bg);
+  --color-border-color: var(--border-color);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Text shadow effect like target website */
+.text-shadow-red {
+  text-shadow: 0 0 20px rgba(204, 0, 0, 0.5);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-dark {
+  background: linear-gradient(180deg, #060606 0%, #0a0a0a 100%);
+}
+
+.bg-gradient-red {
+  background: linear-gradient(135deg, #CC0000 0%, #A30000 100%);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(204, 0, 0, 0.1);
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glow effect */
+.glow-red {
+  box-shadow: 0 0 30px rgba(204, 0, 0, 0.3);
+}
+
+/* Border gradient */
+.border-gradient {
+  border: 1px solid transparent;
+  background: linear-gradient(#111, #111) padding-box,
+              linear-gradient(135deg, #CC0000, transparent) border-box;
 }

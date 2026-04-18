@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model MedicalService {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleZh     String
+  titleEn     String
+  descZh      String
+  descEn      String
+  icon        String
+  featuresZh  String
+  featuresEn  String
+  statsZh     String?
+  statsEn     String?
+  image       String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Consultant {
+  id        String   @id @default(cuid())
+  name      String
+  titleZh   String
+  titleEn   String
+  languages String
+  image     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PatientStory {
+  id          String   @id @default(cuid())
+  name        String
+  country     String
+  treatmentZh String
+  treatmentEn String
+  contentZh   String
+  contentEn   String
+  image       String?
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ProcessStep {
+  id          String   @id @default(cuid())
+  step        Int
+  titleZh     String
+  titleEn     String
+  descZh      String
+  descEn      String
+  icon        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SiteConfig {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  valueZh     String
+  valueEn     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model NavItem {
+  id          String   @id @default(cuid())
+  labelZh     String
+  labelEn     String
+  href        String
+  hasDropdown Boolean  @default(false)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
