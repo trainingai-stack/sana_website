@@ -31,12 +31,14 @@ export default function RootLayout({
       lang="zh"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body 
+        className="min-h-full flex flex-col"
+      >
         <I18nProvider>
           <HeaderWrapper />
-          <main className="flex-1">
+          <div className="flex-1" >
             {children}
-          </main>
+          </div>
           <Footer />
         </I18nProvider>
       </body>

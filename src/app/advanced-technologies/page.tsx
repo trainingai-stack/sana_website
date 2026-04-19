@@ -142,10 +142,10 @@ const comparisonData = [
 ]
 
 export default function AdvancedTechnologiesPage() {
-  const { locale, t } = useI18n()
+  const { locale } = useI18n()
 
   return (
-    <>
+    <div className="min-h-screen bg-[#060606]">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#CC0000]/10 to-transparent" />
@@ -318,6 +318,6 @@ export default function AdvancedTechnologiesPage() {
         </div>
       </section>
 
-    </>
+    </div>
   )
 }

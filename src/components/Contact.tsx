@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { Send, Mail, Phone, MessageCircle, MapPin } from 'lucide-react'
 import { useI18n } from '@/i18n/context'
 
+const CONTACT_SECTION_BG =
+  'https://819896296302317568.static.wqdcdn.com/res/1081120155347587072/20260404/b41285fc77ea452c955a8aac97187299.jpg'
+
 export function Contact() {
   const { t, locale } = useI18n()
   const [formData, setFormData] = useState({
@@ -21,22 +24,28 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-[#060606] relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-24 relative overflow-hidden"
+      style={{
+        backgroundColor: 'rgba(6, 6, 6, 0.85)',
+        backgroundImage: `url(${CONTACT_SECTION_BG})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      }}
+    >
       {/* Background - Using target website pattern */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
         style={{ backgroundImage: 'url(/images/backgrounds/bg-pattern-1.png)' }}
       />
       
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#060606] via-transparent to-[#060606]" />
-      
+  
       {/* Red gradient section at top */}
       <div 
         className="absolute top-0 left-0 right-0 h-1/2"
-        style={{
-          background: 'linear-gradient(180deg, #CC0000 0%, #A30000 50%, transparent 100%)'
-        }}
+    
       />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

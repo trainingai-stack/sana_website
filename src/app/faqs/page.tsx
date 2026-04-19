@@ -168,11 +168,11 @@ const faqCategories = [
 ]
 
 export default function FAQsPage() {
-  const { locale, t } = useI18n()
+  const { locale } = useI18n()
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <>
+    <div className="min-h-screen bg-[#060606]">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -255,6 +255,6 @@ export default function FAQsPage() {
         </div>
       </section>
 
-    </>
+    </div>
   )
 }
