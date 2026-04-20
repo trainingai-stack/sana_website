@@ -48,7 +48,7 @@ export function About() {
               <div
                 className="absolute left-[15px] right-[15px] top-[14px] bottom-[16px]"
                 style={{
-                  backgroundImage: 'url(/target/remote/bdc8273e64f84b41b7ed20300adc71ce.webp)',
+                  backgroundImage: 'url(/images/about/bdc8273e64f84b41b7ed20300adc71ce.webp)',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
                   borderTopLeftRadius: '15px',

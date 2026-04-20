@@ -71,7 +71,7 @@ function ServiceCard({
         className="relative h-full overflow-hidden rounded-[20px] border-2 border-white/20 transition-[border-color,box-shadow] duration-300 ease-out group-hover:border-[#cc0000] group-hover:shadow-[0px_5px_15px_rgba(0,0,0,0.12549019607843137)]"
         style={{
           backgroundImage:
-            'url(/target/remote/38a4042f525e43cd97c4c65d5e893ac1.png)',
+            'url(/images/services/38a4042f525e43cd97c4c65d5e893ac1.png)',
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -82,7 +82,7 @@ function ServiceCard({
           style={{
             backgroundColor: 'rgba(255, 255, 255, 0.08235294117647059)',
             backgroundImage:
-              'url(/target/remote/5ec7781183324bf5a6d9af2a161a50aa.png)',
+              'url(/images/services/5ec7781183324bf5a6d9af2a161a50aa.png)',
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

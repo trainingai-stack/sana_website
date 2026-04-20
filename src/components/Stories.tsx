@@ -14,10 +14,10 @@ interface StoriesProps {
   stories: PatientStory[]
 }
 
-const STORY_TEXTURE_BG = '/target/remote/4dce190aca534c92ad89689708585ee7.png'
-const STORY_HOVER_BG = '/target/remote/f0283a3b8a0f446191875e27ca654806.jpg'
-const STORY_PREV_ICON = '/target/remote/2a9b328ddb30490b985bb3607ef7713b.svg'
-const STORY_NEXT_ICON = '/target/remote/2a5b0f3c86f34ebea0e76f78733be351.svg'
+const STORY_TEXTURE_BG = '/images/stories/4dce190aca534c92ad89689708585ee7.png'
+const STORY_HOVER_BG = '/images/stories/f0283a3b8a0f446191875e27ca654806.jpg'
+const STORY_PREV_ICON = '/images/icons/arrow-prev.svg'
+const STORY_NEXT_ICON = '/images/icons/arrow-next.svg'
 const STORIES_SECTION_BG =
   'https://819896296302317568.static.wqdcdn.com/res/1081120155347587072/20260404/b41285fc77ea452c955a8aac97187299.jpg'
 
@@ -45,7 +45,7 @@ const STORY_SLIDES = {
       name: 'Anna',
       location: '俄罗斯莫斯科',
       age: '38',
-      image: '/target/remote/8dd1c1a97dae49178f992c4f565ff7e8.webp',
+      image: '/images/stories/8dd1c1a97dae49178f992c4f565ff7e8.webp',
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ const STORY_SLIDES = {
       name: 'Emily',
       location: '美国纽约',
       age: '42',
-      image: '/target/remote/f56cd6f88b3d4f3ba56dc229a49186bf.webp',
+      image: '/images/stories/f56cd6f88b3d4f3ba56dc229a49186bf.webp',
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const STORY_SLIDES = {
       name: 'Thomas',
       location: '英国伦敦',
       age: '68',
-      image: '/target/remote/596227b31d3d401d8667727c47463ae5.webp',
+      image: '/images/stories/596227b31d3d401d8667727c47463ae5.webp',
     },
     {
       id: 4,
@@ -75,7 +75,7 @@ const STORY_SLIDES = {
       name: 'Michael',
       location: '澳大利亚悉尼',
       age: '54',
-      image: '/target/remote/ad07fb89eb734a2da2850ce030966138.webp',
+      image: '/images/stories/ad07fb89eb734a2da2850ce030966138.webp',
     },
   ],
   en: [
@@ -87,7 +87,7 @@ const STORY_SLIDES = {
       name: 'Anna',
       location: 'Moscow, Russia',
       age: '38',
-      image: '/target/remote/8dd1c1a97dae49178f992c4f565ff7e8.webp',
+      image: '/images/stories/8dd1c1a97dae49178f992c4f565ff7e8.webp',
     },
     {
       id: 2,
@@ -97,7 +97,7 @@ const STORY_SLIDES = {
       name: 'Emily',
       location: 'New York, USA',
       age: '42',
-      image: '/target/remote/f56cd6f88b3d4f3ba56dc229a49186bf.webp',
+      image: '/images/stories/f56cd6f88b3d4f3ba56dc229a49186bf.webp',
     },
     {
       id: 3,
@@ -107,7 +107,7 @@ const STORY_SLIDES = {
       name: 'Thomas',
       location: 'London, UK',
       age: '68',
-      image: '/target/remote/596227b31d3d401d8667727c47463ae5.webp',
+      image: '/images/stories/596227b31d3d401d8667727c47463ae5.webp',
     },
     {
       id: 4,
@@ -117,7 +117,7 @@ const STORY_SLIDES = {
       name: 'Michael',
       location: 'Sydney, Australia',
       age: '54',
-      image: '/target/remote/ad07fb89eb734a2da2850ce030966138.webp',
+      image: '/images/stories/ad07fb89eb734a2da2850ce030966138.webp',
     },
   ],
 } as const

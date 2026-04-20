@@ -1171,7 +1171,7 @@
 }
 
 .pageShell::before {
-  background: url("/target/remote/e02a283846884423a7e165fe3c99c06f.png") center top / cover
+  background: url("/images/backgrounds/e02a283846884423a7e165fe3c99c06f.png") center top / cover
     no-repeat;
   opacity: 0.08;
 }
@@ -1349,7 +1349,7 @@
 .heroPattern {
   position: absolute;
   inset: 0;
-  background: url("/target/remote/e02a283846884423a7e165fe3c99c06f.png") center / cover no-repeat;
+  background: url("/images/backgrounds/e02a283846884423a7e165fe3c99c06f.png") center / cover no-repeat;
   opacity: 0.09;
   pointer-events: none;
 }
@@ -1578,7 +1578,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/target/remote/e02a283846884423a7e165fe3c99c06f.png") center / cover no-repeat;
+  background: url("/images/backgrounds/e02a283846884423a7e165fe3c99c06f.png") center / cover no-repeat;
   opacity: 0.06;
   pointer-events: none;
 }

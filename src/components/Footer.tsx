@@ -8,15 +8,15 @@ import {
   type FooterLinkItem,
 } from '@/content/footer-pages'
 
-const FOOTER_LOGO = '/target/remote/d50901e1937e432e803b742226360588.svg'
+const FOOTER_LOGO = '/images/icons/footer-logo.svg'
 const FOOTER_BG =
   'https://819896296302317568.static.wqdcdn.com/res/1081120155347587072/20260404/2593c6ae6cce457d84dfb6b384abd56e.jpg'
 const SOCIAL_ICONS = [
-  '/target/remote/255f4fb078e248048f138600df238bc0.svg',
-  '/target/remote/86509e2e87f0499c9ba56d4f2ffe3cbb.svg',
-  '/target/remote/b4b399acd61c42db9542b431ba9c7bef.svg',
-  '/target/remote/4ab3c816b38c41b0abf548468ee9587e.svg',
-  '/target/remote/26cf22dfa5324518b20d1d21ee2f7ece.svg',
+  '/images/icons/wechat.svg',
+  '/images/icons/twitter.svg',
+  '/images/icons/tiktok.svg',
+  '/images/icons/facebook.svg',
+  '/images/icons/instagram.svg',
 ]
 
 const FOOTER_COPY = {

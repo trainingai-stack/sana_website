@@ -9,7 +9,7 @@ interface ProcessProps {
 }
 
 const PROCESS_POINT_ICON =
-  '/target/remote/b308658f7ba8484eb1fb97f909312498.svg'
+  '/images/process/b308658f7ba8484eb1fb97f909312498.svg'
 
 const PROCESS_COPY = {
   zh: {
@@ -141,7 +141,7 @@ function ProcessCard({
               className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               style={{
                 backgroundImage:
-                  'url(/target/remote/ef153785f4ea4f48a7b3ba5a2c141a83.png)',
+                  'url(/images/process/ef153785f4ea4f48a7b3ba5a2c141a83.png)',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -204,7 +204,7 @@ export function Process({ steps }: ProcessProps) {
       style={{
         backgroundColor: 'rgba(6, 6, 6, 0.85)',
         backgroundImage:
-          'url(/target/remote/dafb06a12d7846a687984ccb8fbc762d.jpg)',
+          'url(/images/process/dafb06a12d7846a687984ccb8fbc762d.jpg)',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -220,7 +220,7 @@ export function Process({ steps }: ProcessProps) {
               strokeWidth={6}
             />
             <h2 className="text-[36px] font-bold leading-[1.4] text-white">
-              {copy.title}https://819896296302317568.static.wqdcdn.com/res/1081120155347587072/20260404/b41285fc77ea452c955a8aac97187299.jpgb
+              {copy.title}
             </h2>
             <Plus
               className="mt-3 h-4 w-4 shrink-0 animate-spin text-[#cc0000] [animation-duration:3s]"
