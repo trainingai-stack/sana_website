@@ -327,9 +327,9 @@ function TreatmentsMegaMenu({
                             <span className="relative flex h-full w-full items-center justify-center">
                               <TreatmentMenuIcon
                                 iconType={card.iconType}
-                                iconKey={card.iconKey}
-                                iconSrc={card.iconSrc}
-                                iconClassName={card.iconClassName}
+                                iconKey={'iconKey' in card ? card.iconKey : undefined}
+                                iconSrc={'iconSrc' in card ? card.iconSrc : undefined}
+                                iconClassName={'iconClassName' in card ? card.iconClassName : undefined}
                               />
                             </span>
                           </span>
