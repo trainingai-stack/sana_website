@@ -46,7 +46,7 @@ const FOOTER_COPY = {
       ],
     },
   },
-} as const
+}
 
 const FIXED_SERVICE_FOOTER_SLUGS = [
   'health-checkups',
